@@ -32,8 +32,8 @@ export default function InTheNews() {
             <p className="font-sans text-[1.02rem] leading-relaxed text-ink-soft">
               A running file of what&rsquo;s been written about the group and its
               rooms. Press inquiries:{" "}
-              <a href="mailto:press@imperialfizz.com" className="link-rule text-ink">
-                press@imperialfizz.com
+              <a href="mailto:example@imperialfizz.com" className="link-rule text-ink">
+                example@imperialfizz.com
               </a>
               .
             </p>

@@ -133,8 +133,8 @@ export default function PrivateEvents() {
                     </button>
                     <p className="font-sans text-[0.72rem] leading-relaxed text-ink-faint">
                       Prefer a person? Email{" "}
-                      <a href="mailto:events@imperialfizz.com" className="link-rule text-ink">
-                        events@imperialfizz.com
+                      <a href="mailto:example@imperialfizz.com" className="link-rule text-ink">
+                        example@imperialfizz.com
                       </a>
                       . <span className="italic">Confirm address before launch.</span>
                     </p>

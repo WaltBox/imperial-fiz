@@ -34,12 +34,6 @@ export default function Restaurants() {
               its own honest answer.
             </h2>
           </Reveal>
-          <Reveal delay={120} as="div" className="md:col-span-4 md:col-start-9 md:self-end">
-            <p className="font-sans text-[1.02rem] leading-relaxed text-ink-soft">
-              Each concept was built for one corner of Dallas and nowhere else.
-              Read down the ledger — every house links to its own table.
-            </p>
-          </Reveal>
         </div>
       </div>
 

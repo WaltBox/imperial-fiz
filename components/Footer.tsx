@@ -24,7 +24,7 @@ export default function Footer() {
             </p>
           </div>
           <a
-            href="mailto:realestate@imperialfizz.com"
+            href="mailto:example@imperialfizz.com"
             className="btn shrink-0 bg-paper text-red hover:bg-white"
           >
             Pitch a Location
@@ -105,7 +105,7 @@ export default function Footer() {
               <li><a href="/#pods" className="link-rule hover:text-paper">Pods &amp; More</a></li>
               <li><a href="/#events" className="link-rule hover:text-paper">Private Events</a></li>
               <li><a href="/careers" className="link-rule hover:text-paper">Careers</a></li>
-              <li><a href="mailto:press@imperialfizz.com" className="link-rule hover:text-paper">Press</a></li>
+              <li><a href="mailto:example@imperialfizz.com" className="link-rule hover:text-paper">Press</a></li>
             </ul>
           </nav>
 
@@ -119,13 +119,13 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="mailto:hello@imperialfizz.com" className="link-rule hover:text-paper">
-                  hello@imperialfizz.com
+                <a href="mailto:example@imperialfizz.com" className="link-rule hover:text-paper">
+                  example@imperialfizz.com
                 </a>
               </li>
               <li>
-                <a href="mailto:events@imperialfizz.com" className="link-rule hover:text-paper">
-                  events@imperialfizz.com
+                <a href="mailto:example@imperialfizz.com" className="link-rule hover:text-paper">
+                  example@imperialfizz.com
                 </a>
               </li>
             </ul>

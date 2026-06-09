@@ -45,7 +45,7 @@ export const restaurants: Restaurant[] = [
     url: "https://www.tjsseafood.com",
     tagline: "The origin. Casual, coastal, fresh.",
     blurb:
-      "The family fish market Jon and Natalie Alexis took over in 2009 — and the standard every other table here is measured against. Part market, part grill, part the busiest catering kitchen in the neighborhood. The seafood that threads through all five concepts starts on this counter.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.",
     note: "“I consider myself an apostle of seafood.”",
     accent: "#1F3A4D",
     accentInk: "#EAF1F4",

@@ -49,7 +49,7 @@ export default function Careers() {
             </Reveal>
             <Reveal delay={200}>
               <div className="mt-9 flex flex-wrap gap-4">
-                <a href="mailto:careers@imperialfizz.com" className="btn-solid">
+                <a href="mailto:example@imperialfizz.com" className="btn-solid">
                   Introduce Yourself
                 </a>
                 <a href="#contact" className="btn-outline">
