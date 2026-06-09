@@ -15,7 +15,7 @@ const WAYS = [
     body: "Full and partial buyouts, from Birdie's court-sized patio to Ramble Room's horseshoe bar.",
   },
   {
-    title: "Catering by TJ's",
+    title: "Catering",
     body: "Off-site catering run out of the original fish market — the kitchen that already feeds the city's biggest rooms.",
   },
 ];

@@ -29,9 +29,9 @@ export default function Restaurants() {
         <div className="mt-12 grid grid-cols-1 gap-x-10 gap-y-6 md:grid-cols-12">
           <Reveal as="div" className="md:col-span-7">
             <h2 className="font-display text-[2.4rem] font-medium leading-[1.03] tracking-[-0.01em] text-ink sm:text-[3.1rem]">
-              Every neighborhood,
+              A concept for every
               <br />
-              its own honest answer.
+              corner of Dallas.
             </h2>
           </Reveal>
         </div>
