@@ -1,0 +1,152 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --rule: rgba(23, 23, 27, 0.16);
+  --rule-strong: rgba(23, 23, 27, 0.4);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
+  body {
+    @apply bg-paper text-ink font-sans antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    background: #e5231c;
+    color: #ffffff;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display;
+  }
+}
+
+@layer components {
+  /* Letterpressed ledger label — replaces dashed eyebrows. */
+  .ledger-label {
+    @apply font-sans uppercase tracking-ledger text-[0.68rem] font-semibold text-ink-faint;
+  }
+
+  /* Tabular figures for plate / ledger numbers. */
+  .figure {
+    font-variant-numeric: tabular-nums lining-nums;
+    font-feature-settings: "tnum", "lnum";
+  }
+
+  /* Hairline rule, ledger weight. */
+  .rule {
+    border-color: var(--rule);
+  }
+  .rule-strong {
+    border-color: var(--rule-strong);
+  }
+
+  /* Underline-on-hover link, no pill. */
+  .link-rule {
+    @apply relative inline-block;
+  }
+  .link-rule::after {
+    content: "";
+    @apply absolute left-0 -bottom-[2px] h-px w-full origin-left scale-x-0 bg-current transition-transform duration-300 ease-out;
+  }
+  .link-rule:hover::after {
+    @apply scale-x-100;
+  }
+
+  /* Square, letterpress-y button — never a pill. */
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 px-7 py-3 font-sans text-[0.78rem] font-semibold uppercase tracking-[0.16em] transition-colors duration-200;
+  }
+  .btn-solid {
+    @apply btn bg-red text-paper hover:bg-red-deep;
+  }
+  .btn-outline {
+    @apply btn border border-ink/40 text-ink hover:border-ink hover:bg-ink hover:text-paper;
+  }
+}
+
+@layer utilities {
+  .reveal {
+    @apply animate-rise;
+  }
+  /* Content visible at rest; the keyframe just plays once on mount. */
+  .reveal-rise {
+    animation: rise 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .reveal,
+    .reveal-rise,
+    .animate-rise {
+      animation: none !important;
+    }
+  }
+  /* Engraving-style top rule paired with a roman numeral. */
+  .deckle {
+    box-shadow: inset 0 0 0 1px var(--rule);
+  }
+  /* Hide the scrollbar on the video carousel. */
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Champagne-style fizz bubbles rising inside a container (e.g. the hero card).
+     Each bubble sets its own --dur/--delay/--rise/--drift via inline style. */
+  .fizz-bubble {
+    position: absolute;
+    bottom: -8%;
+    border-radius: 9999px;
+    opacity: 0;
+    will-change: transform, opacity;
+    border: 1.5px solid rgba(255, 255, 255, 0.7);
+    background: radial-gradient(
+      circle at 34% 30%,
+      rgba(255, 255, 255, 0.72),
+      rgba(255, 255, 255, 0.12) 56%,
+      transparent 72%
+    );
+    animation: fizz-rise var(--dur, 8s) ease-in infinite;
+    animation-delay: var(--delay, 0s);
+  }
+  @keyframes fizz-rise {
+    0% {
+      transform: translate(0, 0) scale(0.5);
+      opacity: 0;
+    }
+    14% {
+      opacity: 0.92;
+    }
+    82% {
+      opacity: 0.75;
+    }
+    100% {
+      transform: translate(var(--drift, 0px), var(--rise, -420px)) scale(1.05);
+      opacity: 0;
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .fizz-bubble {
+      animation: none;
+      opacity: 0;
+    }
+  }
+}
