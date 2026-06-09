@@ -4,7 +4,7 @@ import FizzRise from "./ui/FizzRise";
 export default function Hero() {
   return (
     <section id="top" className="relative border-b rule-strong">
-      <div className="mx-auto grid max-w-ledger grid-cols-1 gap-y-10 px-5 pt-16 sm:px-8 md:grid-cols-12 md:gap-x-8 md:pt-24 lg:pt-28">
+      <div className="mx-auto grid max-w-ledger grid-cols-1 gap-y-10 px-5 pb-16 pt-16 sm:px-8 md:grid-cols-12 md:gap-x-8 md:pb-24 md:pt-24 lg:pt-28">
         {/* Statement column — breaks the grid wide */}
         <div className="md:col-span-7 lg:col-span-7">
           <Reveal>
@@ -89,13 +89,6 @@ export default function Hero() {
             </figure>
           </Reveal>
         </div>
-      </div>
-
-      {/* Marquee-free running footer line for the hero band */}
-      <div className="mx-auto mt-14 max-w-ledger px-5 pb-6 sm:px-8">
-        <p className="font-display text-base text-ink-faint">
-          TJ&rsquo;s-quality seafood, threaded quietly through every menu.
-        </p>
       </div>
     </section>
   );

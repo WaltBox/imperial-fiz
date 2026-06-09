@@ -41,11 +41,9 @@ export default function TheIdea() {
           <div className="md:col-span-5">
             <Reveal>
               <h2 className="font-display text-[2.4rem] font-medium leading-[1.02] tracking-[-0.01em] text-ink sm:text-[3rem]">
-                A fish market,
+                It started at a
                 <br />
-                run forward by
-                <br />
-                <span className="text-red">running it backward.</span>
+                <span className="text-red">neighborhood fish market.</span>
               </h2>
             </Reveal>
           </div>
