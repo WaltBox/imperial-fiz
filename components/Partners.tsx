@@ -48,7 +48,7 @@ export default function Partners() {
                   src="/bonder-on-wall.png"
                   alt=""
                   aria-hidden
-                  className="pointer-events-none absolute right-[6%] -top-[35px] z-10 w-[34%] max-w-[160px] drop-shadow-[0_14px_22px_rgba(26,23,20,0.20)] sm:-top-[38px]"
+                  className="pointer-events-none absolute right-[6%] -top-[33px] z-10 w-[34%] max-w-[160px] drop-shadow-[0_14px_22px_rgba(26,23,20,0.20)] sm:-top-[38px]"
                 />
                 <div className="overflow-hidden rounded-xl">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
